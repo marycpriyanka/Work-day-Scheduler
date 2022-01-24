@@ -19,6 +19,8 @@ $(function () {
     clearPreviousDayInLocalStorage();
 
     let timer = setInterval(function() {
+        console.log(currentHour);
+        console.log(moment().format("HH"));
         if (currentHour < moment().format("HH")) {
             currentHour = moment().format("HH");
             colorCodeTimeBlock();
