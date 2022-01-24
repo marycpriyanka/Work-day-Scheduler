@@ -19,117 +19,96 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <main class="container ">
+  <main class="container">
     <!-- Timeblocks go here -->
-    <section class="container" id="nine">
-      <div class="row border-top h-auto">
-        <!-- Each section contains a row of 3 columns -->
-        <div class="col-1 ">9 am </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info">
-          <!-- Bootstrap save icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="nine">
+      <div class="col-1 hour">9 am </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="ten">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">10 am </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="ten">
+      <div class="col-1 hour">10 am </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="eleven">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">11 am </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="eleven">
+      <div class="col-1 hour">11 am </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="twelve">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">12 pm </div>
-        <div class="col-10 bg-secondary" ></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="twelve">
+      <div class="col-1 hour">12 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="thirteen">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">1 pm </div>
-        <div class="col-10 bg-secondary" ></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="thirteen">
+      <div class="col-1 hour">1 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="fourteen">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">2 pm </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="fourteen">
+      <div class="col-1 hour">2 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="fifteen">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">3 pm </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="fifteen">
+      <div class="col-1 hour">3 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="sixteen">
-      <div class="row border-top h-auto">
-        <div class="col-1 ">4 pm </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="sixteen">
+      <div class="col-1 hour">4 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
 
-    <section class="container" id="seventeen">
-      <div class="row border-top border-bottom h-auto">
-        <div class="col-1 ">5 pm </div>
-        <div class="col-10 bg-secondary"></div>
-        <div class="col "><button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
-              <path
-                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
-            </svg></button></div>
-      </div>
+    <section class="row" id="seventeen">
+      <div class="col-1 hour">5 pm </div>
+      <textarea class="col-10 past description"></textarea>
+      <button type="button" class="btn saveBtn h-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+        </svg></button>
     </section>
   </main>
 
