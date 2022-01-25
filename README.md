@@ -10,6 +10,10 @@ Work day scheduler is a daily planner to addd important events of the day for ef
 - The saved items will persist even when the page is refreshed.
 
 ![screenshot1](https://github.com/marycpriyanka/Work-day-Scheduler/blob/main/assets/images/screenshots/screenshot1.JPG)
+
+
+
+
 ![screenshot2](https://github.com/marycpriyanka/Work-day-Scheduler/blob/main/assets/images/screenshots/screenshot2.JPG)
 
 ## Deployed application
