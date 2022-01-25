@@ -13,13 +13,13 @@ container.on("click", ".saveBtn", saveEvent);
 
 // Function will be called when page is loaded
 $(function () {
-    currentDayPElement.text(currentDay);
+    setCurrentDay();
     colorCodeTimeBlock();
     displayEvents();
-    clearPreviousDayInLocalStorage();
 
     // Color codes when each hour changes
     let timer = setInterval(function() {
+        // Color codes time block when each hour changes
         if (moment().format("mm") === "00") {
             let textAreaList = $("main textarea");
             textAreaList.removeClass("present future");
@@ -27,12 +27,20 @@ $(function () {
             colorCodeTimeBlock();
         }
 
+        // Current day is updated at midnight
         if (moment().format("HH") === "00") {
-            currentDay = moment().format("dddd, DD MMM YY");
-            clearPreviousDayInLocalStorage();
+            setCurrentDay();
         }
     },10000);
 });
+
+
+// Displays the current day and clears previous day events in local storage
+function setCurrentDay() {
+    currentDay = moment().format("dddd, DD MMM YY");
+    currentDayPElement.text(currentDay);
+    clearPreviousDayInLocalStorage();
+}
 
 // Color codes time block indicating whether it is in past, present or future
 function colorCodeTimeBlock() {
