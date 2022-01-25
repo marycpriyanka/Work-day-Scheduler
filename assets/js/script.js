@@ -4,7 +4,6 @@ let container = $(".container");
 let currentDay = moment().format("dddd, DD MMM YY");
 // Stores the current hour of the day
 let currentHour = moment().format("HH");
-let tempHour = currentHour;
 moment.duration(1,"hours");
 
 let eventArray =  JSON.parse(localStorage.getItem(currentDay)) || [];
@@ -22,9 +21,17 @@ $(function () {
     // Color codes when each hour changes
     let timer = setInterval(function() {
         if (moment().format("mm") === "00") {
+            let textAreaList = $("main textarea");
+            textAreaList.removeClass("present future");
+            currentHour = moment().format("HH");
             colorCodeTimeBlock();
         }
-    },1000);
+
+        if (moment().format("HH") === "00") {
+            currentDay = moment().format("dddd, DD MMM YY");
+            clearPreviousDayInLocalStorage();
+        }
+    },10000);
 });
 
 // Color codes time block indicating whether it is in past, present or future
@@ -32,7 +39,7 @@ function colorCodeTimeBlock() {
     switch (currentHour) {
         case "01":
         case "02":
-        case "03":
+        case "03":  
         case "04":
         case "05":
         case "06":
