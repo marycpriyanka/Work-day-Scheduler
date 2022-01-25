@@ -4,6 +4,7 @@ let container = $(".container");
 let currentDay = moment().format("dddd, DD MMM YY");
 // Stores the current hour of the day
 let currentHour = moment().format("HH");
+let tempHour = currentHour;
 moment.duration(1,"hours");
 
 let eventArray =  JSON.parse(localStorage.getItem(currentDay)) || [];
@@ -18,11 +19,9 @@ $(function () {
     displayEvents();
     clearPreviousDayInLocalStorage();
 
+    // Color codes when each hour changes
     let timer = setInterval(function() {
-        console.log(currentHour);
-        console.log(moment().format("HH"));
-        if (currentHour < moment().format("HH")) {
-            currentHour = moment().format("HH");
+        if (moment().format("mm") === "00") {
             colorCodeTimeBlock();
         }
     },1000);
@@ -30,20 +29,20 @@ $(function () {
 
 // Color codes time block indicating whether it is in past, present or future
 function colorCodeTimeBlock() {
-    // The current hour is set as bg-warning, all future hours are set as bg-info
     switch (currentHour) {
-        case "1":
-        case "2":
-        case "3":
-        case "4":
-        case "5":
-        case "6":
-        case "7":
-        case "8":
-            $("#eight~.row .col-10").addClass("future");
+        case "01":
+        case "02":
+        case "03":
+        case "04":
+        case "05":
+        case "06":
+        case "07":
+        case "08":
+            $("#nine .col-10").addClass("future");
+            $("#nine~.row .col-10").addClass("future");
             break;
 
-        case "9":
+        case "09":
             $("#nine .col-10").addClass("present");
             $("#nine~.row .col-10").addClass("future");
             break;
