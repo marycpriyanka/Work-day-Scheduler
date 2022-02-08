@@ -16,7 +16,12 @@ Work day scheduler is a daily planner to addd important events of the day for ef
 
 ![screenshot2](https://github.com/marycpriyanka/Work-day-Scheduler/blob/main/assets/images/screenshots/screenshot2.JPG)
 
+## Technologies used
+HTML, CSS, JavaScript, jQuery, Bootstrap, Moment.js, Google fonts
+
 ## Deployed application
 https://marycpriyanka.github.io/Work-day-Scheduler/
 
+### Contact
+marycpriyanka@gmail.com
 
